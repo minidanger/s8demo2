@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.s8.school.mapper.userAccountMapper">
+
+<!--    <select id="addUserAccount" parameterType="com.s8.school.entity.userAccount">-->
+
+<!--    </select>-->
+
+
+</mapper>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="uaa" />
+        <module name="commom" />
+        <module name="school" />
+        <module name="gateway" />
+        <module name="uaa1d" />
+        <module name="consumer" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="commom" options="" />
+      <module name="gateway" options="" />
+      <module name="s8demo" options="" />
+      <module name="uaa" options="" />
+    </option>
+  </component>
+</project>

@@ -1,0 +1,21 @@
+server:
+  port: 7000
+spring:
+  application:
+    name: school-server
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 175.178.114.11:8849
+  rabbitmq:
+    host: 175.178.114.11
+    port: 5672
+    username: admin
+    password: admin
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/sdemo?useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=Asia/Shanghai
+    username: root
+    password: lzl5536556
+mybatis-plus:
+  mapper-locations=classpath:mapper/*.xml

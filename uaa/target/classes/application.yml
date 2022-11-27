@@ -1,0 +1,28 @@
+server:
+  port: 8500
+
+spring:
+  application:
+    name: uaa-server
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 175.178.114.11:8849
+  datasource:
+    url: jdbc:mysql://localhost:3306/sdemo?useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=Asia/Shanghai
+    username: root
+    password: lzl5536556
+    driver-class-name: com.mysql.jdbc.Driver
+
+mybatis-plus:
+  mapper-locations: classpath:/mapper/*.xml
+  global-config:
+    db-config:
+      id-type: auto
+
+#暴露监控
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'

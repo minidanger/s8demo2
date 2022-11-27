@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.s8.school.mapper.transactionsMapper">
+
+    <select id="getTransactionsByUserAndDate" resultType="com.s8.school.entity.transactions">
+        select * from transactions where account = ${param1} and date &gt;= ${param2} and date &lt; ${param3}
+    </select>
+
+
+</mapper>
